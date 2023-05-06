@@ -13,4 +13,3 @@ Finally, the script replaces the innerHTML of the original HTML element with the
 
 The script was created for experimental and educational purposes and is not recommended for use on public websites.
 
-Translated with www.DeepL.com/Translator (free version)
