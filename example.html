@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JsonReplacer</title>
+    <script src="JsonReplacer.js"></script> 
+</head>
+
+<body>
+    <h1>Book library</h1>
+
+    <div id="my-object-id">
+        <h2>{{mtitle}}</h2>
+        <p>Autor: {{mauthor}}</p>
+        <p>Rok wydania: {{myear}}</p>
+        <ul id="books">
+            <li>
+                <h3>{{title}}</h3>
+                <p>Autor: {{author}}</p>
+                <p>Rok wydania: {{year}}</p>
+            </li>
+
+        </ul>
+    </div>
+
+    <script>
+        const jsonReplacer = new JsonReplacer('myBooks.json', 'my-object-id');
+        jsonReplacer.replace();
+    </script>
+</body>
+
+</html>

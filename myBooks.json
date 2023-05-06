@@ -1,0 +1,38 @@
+{
+    "mtitle": "Harry Potter i Kamień Filozoficzny",
+    "mauthor": "J.K. Rowling",
+    "myear": 1997,
+    "books": [
+      {
+        "title": "Harry Potter i Komnata Tajemnic",
+        "author": "J.K. Rowling",
+        "year": 1998
+      },
+      {
+        "title": "Harry Potter i Więzień Azkabanu",
+        "author": "J.K. Rowling",
+        "year": 1999
+      },
+      {
+        "title": "Harry Potter i Czara Ognia",
+        "author": "J.K. Rowling",
+        "year": 2000
+      },
+      {
+        "title": "Harry Potter i Zakon Feniksa",
+        "author": "J.K. Rowling",
+        "year": 2003
+      },
+      {
+        "title": "Harry Potter i Książę Półkrwi",
+        "author": "J.K. Rowling",
+        "year": 2005
+      },
+      {
+        "title": "Harry Potter i Insygnia Śmierci",
+        "author": "J.K. Rowling",
+        "year": 2007
+      }
+    ]
+  }
+  
