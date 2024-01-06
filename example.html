@@ -18,14 +18,16 @@
             <li>
                 <h3>{{title}}</h3>
                 <p>Autor: {{author}}</p>
-                <p>Rok wydania: {{year}}</p>
+                <div id="yearList">
+                    <p>Rok wydania: {{year}}</p>
+                </div>
             </li>
 
         </ul>
     </div>
 
     <script>
-        const jsonReplacer = new JsonReplacer('myBooks.json', 'my-object-id');
+        const jsonReplacer = new JsonReplacer('https://raw.githubusercontent.com/Endriur24/JsonReplacer/main/myBooks2.json', 'my-object-id');
         jsonReplacer.replace();
     </script>
 </body>
