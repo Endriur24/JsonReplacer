@@ -14,7 +14,7 @@ class JsonReplacer {
 
 
                 const outerElementId = this.targetId;
-                document.getElementById(outerElementId).innerHTML = cycleThrough(data, outerElementId);
+                document.getElementById(outerElementId).outerHTML = cycleThrough(data, outerElementId);
 
             })
             .catch(error => console.error(error));
@@ -25,7 +25,7 @@ class JsonReplacer {
         function cycleThrough(data, outerElementId) {
 
             const targetElement = document.getElementById(outerElementId);
-            let targetContent = targetElement.innerHTML;
+            let targetContent = targetElement.outerHTML;
 
 
             Object.keys(data).forEach(key => {
@@ -37,7 +37,7 @@ class JsonReplacer {
                         newContent += cycleThrough(element, key)
                     }
                     const targetElement = document.getElementById(key);
-                    let subtargetContent = targetElement.innerHTML;
+                    let subtargetContent = targetElement.outerHTML;
                     let SubPattern = new RegExp(`${subtargetContent}`, 'g');
                     targetContent = targetContent.replace(SubPattern, newContent);
 
