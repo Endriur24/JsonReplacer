@@ -37,12 +37,10 @@ class JsonReplacer {
                     var virtual_element = document.createElement( 'html' );
                     virtual_element.innerHTML = targetContent;
                     //-------------------
-                    console.log(virtual_element)
                     let newContent = '';
                     for (let element of data[key]) {
                         newContent += cycleThrough(element, key)
                     }
-                    console.log(newContent)
                     virtual_element.querySelector(`#${key}`).innerHTML = newContent;
                     targetContent = virtual_element.innerHTML;
                     
